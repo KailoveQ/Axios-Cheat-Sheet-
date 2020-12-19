@@ -1,6 +1,11 @@
 # Axios-Cheat-Sheet-
 # Axios 速度表（Cheat Sheet）
 ### [英文原文链接](https://kapeli.com/cheat_sheets/Axios.docset/Contents/Resources/Documents/index)
+### axios 高级用法
+* JSON自动处理：axios发现响应的Content-Type是json，就会自动调用JSON.parse，所以说正确设置Content-Type是好习惯。
+* 请求拦截器：你可以在所有请求里加些东西，比如加查询参数
+* 相应拦截器：你可以在所有响应里加些东西，甚至改内容
+* 可以生成不同的实例（对象）：不同的实例可以设置成不同的配置，用于复杂场景
 ## GET 请求
 ```js
 // Make a request for a user with a given ID
